@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+button,
+select {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+select {
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Horizontal layout for visualizations */
+.visualization {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 8px;
+    min-height: 350px;
+    align-items: flex-end;
+}
+
+/* Bar Graph Style */
+.bar {
+    width: 40px;
+    background: #007bff;
+    transition: height 0.3s, background 0.3s;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+}
+
+.bar-value {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Circle Style */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Color Codes */
+.comparing {
+    background: #ff0000 !important;
+}
+
+/* Red */
+.swapped {
+    background: #28a745 !important;
+}
+
+/* Green */
+.key {
+    background: #ff8c00 !important;
+}
+
+/* Orange */
+.sorted {
+    background: #6f42c1 !important;
+}
+
+/* Purple */
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .bar {
+        width: 30px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,1 +1,1 @@
-# Sorting_Methods
+Hey there! I was so focused on Laravel and Codeigniter that I thought to myself that I was starting to forget the basics of sorting methods using JQuery. Here's the practise code of sorting methods based on what I understand. Feel free to clone this repo if you want.
